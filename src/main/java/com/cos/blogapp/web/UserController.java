@@ -29,8 +29,12 @@ public class UserController {
 		return "home";
 	}
 	
+	@GetMapping("/LoginHome")
+	public String LoginHome() {
+		return "LoginHome";
+	}
 	
-	@GetMapping("/joinform")
+	@GetMapping("/JoinForm")
 	public String joinForm() {
 		
 		return "/user/JoinForm";
@@ -40,6 +44,11 @@ public class UserController {
 	public String LoginForm() {
 		return "/user/LoginForm";
 	}
+	@GetMapping("/UpdateUserForm")
+	public String UpdateUserForm() {
+		return "/user/UpdateUserForm";
+	}
+	
 	
 	@PostMapping("/login")
 	public String login(LoginReqDto dto) {
@@ -50,7 +59,7 @@ public class UserController {
 			return "redirect:/LoginForm";
 		} else {
 			session.setAttribute("principal", userEntitiy);
-			return "redirect:/home";
+			return "redirect:/LoginHome";
 		}
 		
 		
@@ -65,5 +74,11 @@ public class UserController {
 		
 	}
 	
-	
+	@PostMapping("/update")
+	public String update(JoinReqDto dto) {
+		userRepository.save(dto.toEntity());
+		System.out.println("수정");
+		return "redirect:/LoginHome";
+		
+	}
 }

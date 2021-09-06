@@ -24,10 +24,13 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/LoginForm">로그인</a>
+        <a class="nav-link" href="/WriteForm">글쓰기</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/JoinForm">회원가입</a>
+        <a class="nav-link" href="/CheckMyContents">내가 쓴 글 확인</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/UpdateUserForm">회원정보수정</a>
       </li>
     </ul>
   </div>  
@@ -35,4 +38,17 @@
 <br>
 
 
-<!-- 네브바 끝  -->
+<h1>${sessionScope.principal.username }님 환영합니다</h1>
+
+
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>강창래 9113</p>
+  <p>📞010-9113-1917</p>
+  <p>📬부산시 부산진구</p>
+  <p>📝사업자번호: 055-232-1557</p>
+</div>
+
+
+</body>
+</html>
