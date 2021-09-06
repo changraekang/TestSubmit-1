@@ -47,10 +47,11 @@
       <div class="input-form col-md-12 mx-auto">
         <h4 class="mb-3">회원정보수정</h4><a href="/LoginHome">홈으로</a>
         
-        <form action="/join" method="POST">
+        <form action="/update" method="POST">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name">이름</label>
+              <input type="hidden" name="id" value="${sessionScope.principal.id }" >         
               <input type="text" class="form-control" id="name" name="username" placeholder="" value="${sessionScope.principal.username }" required>
               <div class="invalid-feedback">
                 이름을 입력해주세요.

@@ -32,6 +32,9 @@
       <li class="nav-item">
         <a class="nav-link" href="/UpdateUserForm">회원정보수정</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/home">로그아웃</a>
+      </li>
     </ul>
   </div>  
 </nav>

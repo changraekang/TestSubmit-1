@@ -76,7 +76,7 @@ public class UserController {
 	
 	@PostMapping("/update")
 	public String update(JoinReqDto dto) {
-		userRepository.save(dto.toEntity());
+		userRepository.save(dto.toUpdate());
 		System.out.println("수정");
 		return "redirect:/LoginHome";
 		

@@ -14,6 +14,7 @@ public class JoinReqDto {
 	private String username;
 	private String password;
 	private String email;
+	private int id;
 	
 	public Users toEntity() {
 		Users user = new Users();
@@ -24,5 +25,14 @@ public class JoinReqDto {
 		return user;
 	}
 	
+	public Users toUpdate() {
+		Users user = new Users();
+		user.setId(id);
+		user.setUsername(username);
+		user.setPassword(password);
+		user.setEmail(email);
+		
+		return user;
+	}
 	
 }
