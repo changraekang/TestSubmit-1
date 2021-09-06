@@ -33,11 +33,11 @@ public class UserController {
 	@GetMapping("/joinform")
 	public String joinForm() {
 		
-		return "/user/joinForm-1";
+		return "/user/JoinForm";
+		//return "/user/joinForm-1";
 	}
 	@GetMapping("/LoginForm")
 	public String LoginForm() {
-		
 		return "/user/LoginForm";
 	}
 	

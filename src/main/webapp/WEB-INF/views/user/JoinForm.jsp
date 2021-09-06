@@ -46,7 +46,7 @@
     <div class="input-form-backgroud row">
       <div class="input-form col-md-12 mx-auto">
         <h4 class="mb-3">회원가입</h4>
-        <form class="validation-form" novalidate>
+        <form action="/join" method="POST">
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name">이름</label>
@@ -59,7 +59,7 @@
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name">비밀번호</label>
-              <input type="text" class="form-control" id="name" name="password" placeholder="" value="" required>
+              <input type="password" class="form-control" id="name" name="password" placeholder="" value="" required>
               <div class="invalid-feedback">
                 비밀번호를 입력해주세요.
               </div>
