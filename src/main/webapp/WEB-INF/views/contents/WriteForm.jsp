@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<form action="write.jsp" method="post">
+	<form action="/Write" method="post">
 	<table>
 	<caption><h2>새글 쓰기</h2></caption>	
 	<tr>
